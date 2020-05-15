@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime Chat App</title>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script defer src="./js/jquery.js"></script>
+    <script defer src="./js/popper.js"></script>
+    <script defer src="./js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body class="container text-center pt-5 bg-dark text-light">
+    <div class="loginBox mt-3">
+      <h3 class="mb-3">Login Box</h3>
+      <input
+        type="text"
+        id="inpName"
+        placeholder="enter your name"
+      /><br /><br />
+      <input
+        type="password"
+        id="inpPassword"
+        placeholder="enter password"
+      /><br /><br />
+      <button id="btnLogin">Login</button><br /><br />
+    </div>
+    <div class="chatBox mt-5">
+      <h3 class="mb-3">Chat Box</h3>
+
+      <input
+        type="text"
+        id="inpRecieverName"
+        placeholder="msg send to (default everyone)"
+      /><br /><br />
+      <input
+        type="text"
+        id="inpMessage"
+        placeholder="type message"
+      /><br /><br />
+      <button id="btnSend">Send</button>
+    </div>
+    <ul id="msgList" class="mt-3"></ul>
+  </body>
+</html>
